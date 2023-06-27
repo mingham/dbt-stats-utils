@@ -22,22 +22,3 @@ Originally designed to measure wealth concentration across the population, this 
 Usage:
 
 {{ get_lorenz('ref_table_column',ref('ref_table_name'), group_by='ref_table_column_for_groupby') }}
-
-
-
-
-| order_id  | in_b  | count | percent_of_total |
-|-------|-------|------:|-----------------:|
-| True  | True  | 6870  | 99.74            |
-| True  | False | 9     | 0.13             |
-| False | True  | 9     | 0.13             |
-
-Setting the `summarize` argument to `false` lets you check which rows do not match between relations:
-
-| order_id | pay_method | amount    |
-|----------|------------|-----------|
-| 1        | 2018-01-01 | completed |
-| 1        | 2018-01-01 | returned  |
-| 2        | 2018-01-02 | completed |
-| 2        | 2018-01-02 | returned  |
-
