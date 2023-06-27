@@ -19,8 +19,14 @@ This macro generates SQL that will compute the [Lorenz curve](https://demonstrat
 
 Originally designed to measure wealth concentration across the population, this measure can easily be applied to other data such as sales to assess concentration (eg, to provide insights such as; the top 10% of buyers may account for 90% of sales)
 
+Usage:
 
-| in_a  | in_b  | count | percent_of_total |
+{{ get_lorenz('ref_table_column',ref('ref_table_name'), group_by='ref_table_column_for_groupby') }}
+
+
+
+
+| order_id  | in_b  | count | percent_of_total |
 |-------|-------|------:|-----------------:|
 | True  | True  | 6870  | 99.74            |
 | True  | False | 9     | 0.13             |
@@ -28,10 +34,10 @@ Originally designed to measure wealth concentration across the population, this 
 
 Setting the `summarize` argument to `false` lets you check which rows do not match between relations:
 
-| order_id | order_date | status    | in_a  | in_b  |
-|----------|------------|-----------|-------|-------|
-| 1        | 2018-01-01 | completed | True  | False |
-| 1        | 2018-01-01 | returned  | False | True  |
-| 2        | 2018-01-02 | completed | True  | False |
-| 2        | 2018-01-02 | returned  | False | True  |
+| order_id | pay_method | amount    |
+|----------|------------|-----------|
+| 1        | 2018-01-01 | completed |
+| 1        | 2018-01-01 | returned  |
+| 2        | 2018-01-02 | completed |
+| 2        | 2018-01-02 | returned  |
 
