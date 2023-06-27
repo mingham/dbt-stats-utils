@@ -22,3 +22,5 @@ Originally designed to measure wealth concentration across the population, this 
 Usage:
 
 {{ get_lorenz('ref_table_column',ref('ref_table_name'), group_by='ref_table_column_for_groupby') }}
+
+[see here](models/example/lorenz_payments.sql)
