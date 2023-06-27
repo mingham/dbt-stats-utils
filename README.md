@@ -7,9 +7,11 @@ This package contains several useful macros to investigate the distributions of 
 * [get_lorenz](#get_lorenz-source)
 
 # Installation instructions
-New to dbt packages? Read more about them [here](https://docs.getdbt.com/docs/building-a-dbt-project/package-management/).
+This package is not yet on [dbt hub](https://hub.getdbt.com/) so install via git clone
+
+<!-- New to dbt packages? Read more about them [here](https://docs.getdbt.com/docs/building-a-dbt-project/package-management/).
 1. Include this package in your `packages.yml` file — check [here](https://hub.getdbt.com/dbt-labs/audit_helper/latest/) for the latest version number.
-2. Run `dbt deps` to install the package.
+2. Run `dbt deps` to install the package. -->
 
 # Macros
 ## get_lorenz ([source](macros/get_lorenz.sql))
