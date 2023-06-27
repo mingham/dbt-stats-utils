@@ -2,20 +2,19 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: stg_payments
+    description: "An example payments dbt model"
     columns:
       - name: id
         description: "The primary key for this table"
         tests:
           - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
+          - not_null		
+      - name: order_id
+        description: "unique order id"  
         tests:
           - unique
-          - not_null
+          - not_null		
+      - name: payment_method
+      - name: amount
+        description: "amount spent on order in USD"  
