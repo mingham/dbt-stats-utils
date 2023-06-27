@@ -1,4 +1,4 @@
-# dbt-distributions
+# dbt-stats-utils
 
 This package contains several useful macros to investigate the distributions of fields in your models.
 
