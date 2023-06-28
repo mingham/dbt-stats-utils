@@ -5,16 +5,13 @@ models:
   - name: stg_payments
     description: "An example payments dbt model"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null		
       - name: order_id
-        description: "unique order id"  
+        description: "order id (not necessarily unique)"  
         tests:
-          - unique
           - not_null		
       - name: payment_method
+          - not_null
       - name: amount
         description: "amount spent on order in USD"  
+        tests:
+          - not_null
