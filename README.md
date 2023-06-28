@@ -19,4 +19,4 @@ This macro generates SQL that will compute the [Lorenz curve](https://demonstrat
 
 Originally designed to measure wealth concentration across the population, this measure can easily be applied to other data such as sales to assess concentration (eg, to provide insights such as; the top 10% of buyers may account for 90% of sales)
 
-Usage: [see here](models/example/lorenz_payments.sql)
+Usage: [see here](models/example/lorenz_sales.sql)

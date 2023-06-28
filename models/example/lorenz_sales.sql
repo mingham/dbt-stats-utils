@@ -1,2 +1,2 @@
-{{ get_lorenz('"luxury-handbags"',ref('raw_sales'), group_by='order_id') }}
+{{ get_lorenz('"nappies"',ref('raw_sales'), group_by='order_id') }}
 
